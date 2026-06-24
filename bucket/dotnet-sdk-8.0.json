@@ -5,24 +5,15 @@
   "license": "MIT",
   "architecture": {
     "32bit": {
-      "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.422/dotnet-sdk-8.0.422-win-x86.exe"
+      "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.422/dotnet-sdk-8.0.422-win-x86.zip"
     },
     "64bit": {
-      "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.422/dotnet-sdk-8.0.422-win-x64.exe"
+      "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.422/dotnet-sdk-8.0.422-win-x64.zip"
     }
   },
-  "depends": "dark",
   "bin": "dotnet.exe",
   "env_set": {
     "DOTNET_ROOT": "$dir"
-  },
-  "installer": {
-    "script": [
-      "Expand-DarkArchive \"$dir\\$fname\" \"$dir\\extracted\" -Removal",
-      "Get-ChildItem \"$dir\\extracted\\AttachedContainer\\*.msi\" | ForEach-Object { Expand-MsiArchive $_ \"$dir\" }",
-      "Move-Item \"$dir\\dotnet\\*\" \"$dir\" -Force",
-      "@('dotnet', 'extracted') | ForEach-Object { Remove-Item \"$dir\\$_\" -Recurse }"
-    ]
   },
   "checkver": {
     "url": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json",
@@ -31,10 +22,10 @@
   "autoupdate": {
     "architecture": {
       "32bit": {
-        "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/$version/dotnet-sdk-$version-win-x86.exe"
+        "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/$version/dotnet-sdk-$version-win-x86.zip"
       },
       "64bit": {
-        "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/$version/dotnet-sdk-$version-win-x64.exe"
+        "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/$version/dotnet-sdk-$version-win-x64.zip"
       }
     },
     "hash": {
@@ -42,5 +33,5 @@
       "url": "https://dotnetcli.blob.core.windows.net/dotnet/checksums/$version-sha.txt"
     }
   },
-  "notes": "The .NET SDK contains the runtime, SDK, and CLI tools required to build applications."
+  "notes": ".NET SDK installed from ZIP (portable layout)."
 }
