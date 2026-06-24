@@ -186,7 +186,7 @@ for channel in index["releases-index"]:
         write_manifest(f"dotnet-desktop-runtime-{v}.json", desktop_manifest)
 
     # =========================================================
-    # 3. SDK (ZIP ONLY — CRITICAL FIX)
+    # 3. SDK (ZIP ONLY)
     # =========================================================
     if sdk_version:
 
@@ -205,8 +205,6 @@ for channel in index["releases-index"]:
                 }
             },
 
-            # IMPORTANT:
-            # ZIP is auto-extracted by Scoop (NO MSI, NO SCRIPT)
             "bin": "dotnet.exe",
 
             "env_set": {
