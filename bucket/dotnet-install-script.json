@@ -9,7 +9,7 @@
         "src\\dotnet-install.ps1"
     ],
     "checkver": {
-        "github": "dotnet/install-scripts"
+        "github": "https://github.com/dotnet/install-scripts"
     },
     "autoupdate": {
         "url": "https://github.com/dotnet/install-scripts/archive/refs/tags/v$version.zip",
