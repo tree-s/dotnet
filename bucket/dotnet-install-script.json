@@ -9,7 +9,7 @@
         "src\\dotnet-install.ps1"
     ],
     "checkver": {
-        "github": "https://github.com/dotnet/install-scripts/tags",
+        "url": "https://github.com/dotnet/install-scripts/tags",
         "regex": "(v\\d{4}\\.\\d{2}\\.\\d{2})"
     },
     "autoupdate": {
