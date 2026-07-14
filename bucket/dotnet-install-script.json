@@ -13,6 +13,7 @@
     },
     "autoupdate": {
         "url": "https://github.com/dotnet/install-scripts/archive/refs/tags/v$version.zip",
-        "extract_dir": "install-scripts-$version"
+        "extract_dir": "install-scripts-$version",
+        "version": "$version"
     }
 }
