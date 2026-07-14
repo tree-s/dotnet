@@ -10,7 +10,7 @@
     ],
     "checkver": {
         "github": "https://github.com/dotnet/install-scripts/tags",
-        "regex": "(v\\d{4}\.\\d{2}\.\\d{2})"
+        "regex": "(v\\d{4}\\.\\d{2}\\.\\d{2})"
     },
     "autoupdate": {
         "url": "https://github.com/dotnet/install-scripts/archive/refs/tags/$version.zip",
