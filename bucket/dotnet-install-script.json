@@ -1,5 +1,5 @@
 {
-    "version": "1.0.0",
+    "version": "0.0.0",
     "description": ".NET installation scripts",
     "homepage": "https://github.com/dotnet/install-scripts",
     "license": "MIT",
@@ -13,7 +13,6 @@
     },
     "autoupdate": {
         "url": "https://github.com/dotnet/install-scripts/archive/refs/tags/v$version.zip",
-        "extract_dir": "install-scripts-$version",
-        "version": "$version"
+        "extract_dir": "install-scripts-$version"
     }
 }
