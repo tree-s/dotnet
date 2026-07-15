@@ -4,7 +4,7 @@
     "homepage": "https://github.com/dotnet/install-scripts",
     "license": "MIT",
     "url": "https://github.com/dotnet/install-scripts/archive/refs/tags/v2026.05.19.zip",
-    "extract_dir": "install-scripts-v2026.05.19",
+    "extract_dir": "install-scripts-2026.05.19",
     "bin": "src\\dotnet-install.ps1",
     "checkver": {
         "url": "https://api.github.com/repos/dotnet/install-scripts/tags",
@@ -12,6 +12,6 @@
     },
     "autoupdate": {
         "url": "https://github.com/dotnet/install-scripts/archive/refs/tags/v$version.zip",
-        "extract_dir": "install-scripts-v$version"
+        "extract_dir": "install-scripts-$version"
     }
 }
