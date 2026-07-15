@@ -8,8 +8,8 @@
     "extract_dir": "install-scripts-2026.05.19",
     "bin": "src\\dotnet-install.ps1",
     "env_set": {
-        "DOTNET_INSTALL_DIR": "$dir/dotnet",
-        "DOTNET_ROOT": "$dir/dotnet"
+        "DOTNET_INSTALL_DIR": "$dir\\dotnet",
+        "DOTNET_ROOT": "$dir\\dotnet"
     },
     "checkver": {
         "url": "https://api.github.com/repos/dotnet/install-scripts/tags",
